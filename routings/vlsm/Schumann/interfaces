@@ -1,0 +1,16 @@
+# eth0 Switch2, eth1 Akashic, eth2 Accela
+auto eth0
+iface eth0 inet static
+    address 10.67.16.36
+    netmask 255.255.255.248
+
+auto eth1
+iface eth1 inet static
+    address 10.67.16.41
+    netmask 255.255.255.248
+
+auto eth2
+iface eth2 inet static
+    address 10.67.16.89
+    netmask 255.255.255.252
+    up sh /root/init.sh

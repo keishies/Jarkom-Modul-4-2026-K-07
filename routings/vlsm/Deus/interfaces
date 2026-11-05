@@ -1,0 +1,16 @@
+# eth0 Tachibana, eth1 Switch10, eth2 Protocol7
+auto eth0
+iface eth0 inet static
+    address 10.67.16.70
+    netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+    address 10.67.14.129
+    netmask 255.255.255.128
+
+auto eth2
+iface eth2 inet static
+    address 10.67.16.73
+    netmask 255.255.255.252
+    up sh /root/init.sh

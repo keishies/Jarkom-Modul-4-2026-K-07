@@ -1,0 +1,16 @@
+# eth0 Switch2, eth1 Juri, eth2 Switch4
+auto eth0
+iface eth0 inet static
+    address 10.67.16.35
+    netmask 255.255.255.248
+
+auto eth1
+iface eth1 inet static
+    address 10.67.15.193
+    netmask 255.255.255.192
+
+auto eth2
+iface eth2 inet static
+    address 10.67.8.1
+    netmask 255.255.254.0
+    up sh /root/init.sh

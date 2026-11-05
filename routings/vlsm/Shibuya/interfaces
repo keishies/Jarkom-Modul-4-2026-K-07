@@ -1,0 +1,11 @@
+# eth0 Phantoma, eth1 Switch13
+auto eth0
+iface eth0 inet static
+    address 10.67.16.86
+    netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+    address 10.67.15.1
+    netmask 255.255.255.192
+    up sh /root/init.sh

@@ -1,0 +1,16 @@
+# eth0 Wired, eth1 Switch9, eth2 Deus
+auto eth0
+iface eth0 inet static
+    address 10.67.16.66
+    netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+    address 10.67.10.1
+    netmask 255.255.254.0
+
+auto eth2
+iface eth2 inet static
+    address 10.67.16.69
+    netmask 255.255.255.252
+    up sh /root/init.sh

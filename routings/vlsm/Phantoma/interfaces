@@ -1,0 +1,16 @@
+# eth0 Knights, eth1 Switch12, eth2 Shibuya
+auto eth0
+iface eth0 inet static
+    address 10.67.16.82
+    netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+    address 10.67.16.1
+    netmask 255.255.255.224
+
+auto eth2
+iface eth2 inet static
+    address 10.67.16.85
+    netmask 255.255.255.252
+    up sh /root/init.sh

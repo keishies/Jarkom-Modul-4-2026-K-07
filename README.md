@@ -15,7 +15,7 @@
 
 Berdasarkan hasil pemisahan rute yang dilakukan melalui spreadsheet, topologi jaringan terdiri atas **23 subnet**. Pembagian subnet disesuaikan dengan koneksi antar-node, switch, dan router sehingga setiap segmen jaringan memiliki alokasi alamat IP masing-masing.
 
-![](images/vlsm.png)
+![](images/vlsm/topologi.png)
 
 #### 2. Perhitungan VLSM
 
@@ -46,3 +46,8 @@ Dengan demikian, blok jaringan induk yang digunakan adalah **`10.67.0.0/19`**, d
 Rincian perhitungan kebutuhan host, prefix, network ID, dan rentang alamat setiap subnet dapat dilihat pada spreadsheet yang disertakan dalam direktori `result/`.
 
 #### 4. Pengujian
+
+Digunakan script ping-all untuk menguji konektivitas antar-node. Hasil pengujian menunjukkan bahwa seluruh node dapat saling terhubung, menandakan bahwa konfigurasi jaringan telah berhasil diterapkan dengan baik.
+
+
+![](images/vlsm/pingvlsm.png)

@@ -1,0 +1,16 @@
+# eth0 Protocol7, eth1 Eiri, eth2 Phantoma
+auto eth0
+iface eth0 inet static
+    address 10.67.16.78
+    netmask 255.255.255.252
+
+auto eth1
+iface eth1 inet static
+    address 10.67.16.49
+    netmask 255.255.255.248
+
+auto eth2
+iface eth2 inet static
+    address 10.67.16.81
+    netmask 255.255.255.252
+    up sh /root/init.sh
